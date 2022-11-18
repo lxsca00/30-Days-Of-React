@@ -1,28 +1,71 @@
-console.log("Refreshing JS!");
+const arr = [];
 
-const arr = []; // Recomended way to create a empty array
+const arrNum = [1, 2, 3, 4, 5];
 
-let js = "Javascript";
+arrNum.length;
 
-const webTechs = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Redux",
-  "Node",
-  "MongoDB",
+arrNum[0], arrNum[2], arrNum[4];
+
+const mixedDataTypes = ["uno", 1, true, [1, 1], null];
+
+mixedDataTypes.length;
+
+const itCompanies = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
 ];
 
-webTechs[1] = "Durazno";
+console.log(itCompanies);
 
-Array(8).fill("A");
+console.log(itCompanies.length);
 
-const firstList = [1, 2, 3, 4];
-const secondList = [5, 6, 7, 8];
+console.log(
+  itCompanies[0],
+  itCompanies[(itCompanies.length - 1) / 2],
+  itCompanies[itCompanies.length - 1]
+);
 
-let inde = firstList.indexOf(2);
+itCompanies.forEach((company) => console.log(company));
 
+itCompanies.forEach((company) =>
+  console.log("En mayúsculas", company.toUpperCase())
+);
 
+console.log(itCompanies.toString() + "are big IT companies");
 
-inde != -1 ? console.log("wtf is dis") : console.log("A");
+itCompanies.includes("Apple") ? console.log("Apple") : console.log("Not found");
+
+for (let i = 0; i < itCompanies.length; i++) {
+  itCompanies[i].split("").filter((letter) => letter === "o").length > 1
+    ? console.log("Más de dos O: ", itCompanies[i])
+    : "esto no";
+}
+
+itCompanies.sort();
+
+console.log(itCompanies);
+
+itCompanies.reverse();
+
+console.log(itCompanies);
+
+console.log(itCompanies.slice(0, 3));
+
+console.log(itCompanies.slice(itCompanies.length - 3));
+
+console.log(
+  itCompanies.slice(itCompanies.length / 2, itCompanies.length / 2 + 1)
+);
+
+console.log(itCompanies.shift());
+
+console.log(itCompanies.splice(itCompanies.length / 2 - 1, 1).toString());
+
+console.log(itCompanies.pop());
+
+console.log(itCompanies.splice(itCompanies.length));
