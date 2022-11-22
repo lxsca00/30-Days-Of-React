@@ -40,3 +40,15 @@ const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node', 'Express', 'MongoDB']
 
 console.log(frontEnd.concat(backEnd))
+
+const firstName = "John"
+const lastName = "Doe"
+
+function fullName (first, last) {
+   return first + last;
+}
+
+function areaOfCircle (r) {
+    return 3.14*r*r
+}
+
